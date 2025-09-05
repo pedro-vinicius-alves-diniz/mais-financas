@@ -12,9 +12,7 @@ import { toast } from "sonner";
 
 export default function FormSignUp() {
   const [state, formAction, isPedding] = useActionState(SignUpAction, null);
-  function signUp(formData: FormData) {
-    console.log(formData);
-  }
+  
 
   useEffect(() => {
     if(state?.success === false){
